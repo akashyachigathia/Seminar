@@ -540,9 +540,27 @@ html {
 
 }
 
-.First_method{
-  margin-top: 20px;
+.method-content{
+  margin-top: 40px;
 }
+
+.method-content h5{
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: rgb(31, 31, 31);
+}
+
+.method-content p{
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.2px;
+  margin-bottom: 3.5rem;
+  font-size: 20px;
+}
+
+
 
 
 
