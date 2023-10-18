@@ -6,6 +6,8 @@
     <title>Seminarm</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <!-- Poppins for H1 - h6-------------------- -->
     <!-- font-family: 'Poppins', sans-serif; -->
@@ -21,8 +23,8 @@
     <!-- font-family: 'Open Sans', sans-serif; -->
 </head>
 <body>
-    <header class="wrappers">
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <header class="wrappers ">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container">
             <a class="navbar-brand" href="#">
               <img src="images/High-logo.png" width="190px" alt="">
@@ -45,13 +47,32 @@
                 </li>
               </ul>
               <div class="con__info d-flex align-items-center btnhover mx-2">
-                <a class="btn-primary" href="#"> Buy Now</a>
+                <a class="btn-primary" id="Booknow" href="#"> Buy Now</a>
               </div>
               
             </div>
           </div>
         </nav>
     </header>
+
+    <section class="pop" id="popid">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            <div class="popup text-center">
+              <a href="#" class="close-button" id="close-popup">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+              </a>
+            <h1>Online Seminar</h1>
+            <p>Explore the gateway to learning - Secure your spot today and embark on a journey of limitless knowledge, growth, and success. Don't miss out on this opportunity to expand your horizons and reach new heights.</p>
+            <a class="btn btn-primary btn-pope" href="#">Book a seminar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
        <!-- Nav - End -->
 
@@ -70,8 +91,10 @@
             </div>
 
             <div class="col-lg-6 img-col">
-              <img src="images/hero.jpg" alt="hero-img">
+              <div class="hero-img">
+              <img src="images/hero.jpg" alt="hero">
             </div>
+          </div>
 
 
           </div>
@@ -86,7 +109,32 @@
 
             <div class="col-lg-6 ">
               <div class="Event-content aligh-left">
-                <h2> What is virtual Seminar </h2>
+                 <div class="Plan">
+                   <h2>Event plan</h2>
+                 </div>
+                <div class="owl-carousel owl-theme mt-3">
+                  <div class="item">
+                    <h4>Real-Time Interaction</h4>
+                    <p>A virtual seminar, or webinar, is an online event where participants join remotely to access educational content, presentations, and discussions via the internet, fostering accessibility and knowledge sharing.</p>
+                  </div>
+
+                  <div class="item">
+                    <h4>Presenter-Led</h4>
+                    <p>A virtual seminar, or webinar, is an online event where participants join remotely to access educational content, presentations, and discussions via the internet, fostering accessibility and knowledge sharing.</p>
+                  </div>
+
+                  <div class="item">
+                    <h4>Content Delivery</h4>
+                    <p>A virtual seminar, or webinar, is an online event where participants join remotely to access educational content, presentations, and discussions via the internet, fostering accessibility and knowledge sharing.</p>
+                  </div>
+
+                  <div class="item">
+                    <h4>Global Reach</h4>
+                    <p>A virtual seminar, or webinar, is an online event where participants join remotely to access educational content, presentations, and discussions via the internet, fostering accessibility and knowledge sharing.</p>
+                  </div>
+              </div>
+
+                <!-- <h2> What is virtual Seminar </h2>
                 <p>A virtual seminar, or webinar, is an online event where participants join remotely to access educational content, presentations, and discussions via the internet, fostering accessibility and knowledge sharing.</p>
                 <ul>
                   <li>Online</li>
@@ -94,7 +142,7 @@
                   <li>Presenter-Led</li>
                   <li>Content Delivery</li>
                   <li>Global Reach</li>   
-                </ul>
+                </ul> -->
 
                 <p class="last_statement" >Inspiring Minds, One Click at a
                   <a href="#" class="text_black">Time</a> </p>
@@ -227,7 +275,7 @@
       <div class="col-lg-12">
       <div class="method_copy">
         <h2>Our methods</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Innovative methods, expert insights, your empowerment.</p>
       </div>
       </div>
     </div>
@@ -238,7 +286,7 @@
           <img src="images/method1.jpg" alt="">
           <div class="method-content">
           <h5>Our approaches</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed doloribus illo non quaerat consequuntur? Neque est obcaecati ex blanditiis inventore!
+          <p>Diverse experts and interactive learning with cutting-edge tech, customizing for real-world application, fostering a global perspective and continuous growth.
           </p>
         </div>
       </div>
@@ -249,17 +297,89 @@
           <img src="images/method2.jpg" alt="">
           <div class="method-content">
           <h5>Practice</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed doloribus illo non quaerat consequuntur? Neque est obcaecati ex blanditiis inventore!
+          <p>We prioritize deliberate practice, offer hands-on experience, and maintain a feedback loop, empowering participants to hone their skills effectively.
           </p>
         </div>
       </div>
       </div>
-
-
     </div>
   </div>
 </section>
 
+<!-- Method section End ---------------------------------------- -->
+
+<section class="clients" >
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-12">
+      <div class="clients_copy text-center ">
+        <h5>Our Clients</h5>
+        <p>Unlock new horizons of knowledge and success, hand in hand with our trusted partners, as we take you on an exhilarating journey at our upcoming seminar.</p>
+      </div>
+
+      <div class="logo_partner">
+        <ul>
+          <li>
+            <img src="" alt="">
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="Js/jquery.min.js" ></script>
+<script src="Js/owl.carousel.min.js" ></script>
+
+<script>
+  $(document).ready(function(){
+  $('.owl-carousel').owlCarousel();
+});
+</script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+   
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
+</script>
+
+<script>
+  // Function to open the popup
+function openPopup() {
+  document.getElementById("popid").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById("popid").style.display = "none";
+}
+
+// Add a click event listener to the "Buy Now" button
+document.getElementById("Booknow").addEventListener("click", openPopup);
+
+// Add a click event listener to the close button
+document.getElementById("close-popup").addEventListener("click", closePopup);
+
+</script>
 
 
 </body>
