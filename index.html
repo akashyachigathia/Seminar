@@ -55,6 +55,8 @@
         </nav>
     </header>
 
+
+    <div class="overlay_class" id="blackoverlay" >
     <section class="pop" id="popid">
     <div class="container">
       <div class="row">
@@ -73,6 +75,7 @@
       </div>
     </div>
   </section>
+</div>
 
        <!-- Nav - End -->
 
@@ -320,13 +323,43 @@
       <div class="logo_partner">
         <ul>
           <li>
-            <img src="" alt="">
+            <img src="images/1.png" alt="">
+          </li>
+
+          <li>
+            <img src="images/2.png" alt="">
+          </li>
+
+          <li>
+            <img src="images/3.png" alt="">
+          </li>
+
+          <li>
+            <img src="images/4.png" alt="">
+          </li>
+
+          <li>
+            <img src="images/5.png" alt="">
           </li>
         </ul>
       </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- -----------------------------------Partner end ---------------------- -->
+
+<section class="FAQ" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12" >
+        
+      </div>
+    </div>
+  </div>
+
+
 </section>
 
 
@@ -363,21 +396,42 @@ $('.owl-carousel').owlCarousel({
 </script>
 
 <script>
-  // Function to open the popup
-function openPopup() {
-  document.getElementById("popid").style.display = "block";
+// Get the "Booknow" button
+var bookNowButton = document.getElementById("Booknow");
+
+// Get the overlay
+var overlay = document.getElementById("blackoverlay");
+
+// Get the pop-up
+var popUp = document.getElementById("popid");
+
+// Function to open the pop-up
+function openPopUp() {
+  overlay.style.display = "block";
+  popUp.style.display = "block";
 }
 
-// Function to close the popup
-function closePopup() {
-  document.getElementById("popid").style.display = "none";
+// Function to close the pop-up
+function closePopUp() {
+  overlay.style.display = "none";
+  popUp.style.display = "none";
 }
 
-// Add a click event listener to the "Buy Now" button
-document.getElementById("Booknow").addEventListener("click", openPopup);
+// Add a click event listener to the "Booknow" button
+bookNowButton.addEventListener("click", openPopUp);
 
 // Add a click event listener to the close button
-document.getElementById("close-popup").addEventListener("click", closePopup);
+var closeButton = document.getElementById("close-popup");
+closeButton.addEventListener("click", closePopUp);
+
+
+
+// Add a click event listener to the overlay to close the pop-up when clicking outside it
+overlay.addEventListener("click", function (event) {
+  if (event.target === overlay) {
+    closePopUp();
+  }
+});
 
 </script>
 
